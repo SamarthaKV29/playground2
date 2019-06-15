@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+  text-align: center;
+}
+body .container .row .col {
+  float: none;
+}
+body .container .row .col#headholder {
+  height: 100px;
+}
+body .container h1, body .container h2, body .container h3, body .container h4, body .container h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body .container #head {
+  display: inline-flex;
+  margin: 0;
+}
+body .container #head .drippers {
+  padding: 0px 4px;
+  justify-content: space-evenly;
+}
+body .container #wordHolder {
+  color: white;
+  font-size: 20px;
+}
+
+.drippin {
+  animation: ease-in-out drippin 1s;
+}
+
+@keyframes drippin {
+  0% {
+    opacity: 0.5;
+    text-shadow: 0px -5px 2px white;
+  }
+  20% {
+    text-shadow: 0px 0px 2px lightgreen;
+  }
+  35% {
+    text-shadow: 0px -3px 3px green;
+  }
+  60% {
+    opacity: 1;
+    text-shadow: 0px -4px 3px lightgreen;
+    color: lightgreen;
+  }
+  70% {
+    opacity: 0.8;
+    text-shadow: 0px -4px 3px white;
+  }
+  100% {
+    text-shadow: 0px -100px 10px #1d1a1a;
+    opacity: 0.3;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
