@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 10000px;
+}
+body h1, body h2, body h3, body h4, body h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body .container #rangeHolder {
+  margin-top: 100px;
+}
+body .container #rangeHolder .col {
+  padding: 0px;
+  margin: 0px;
+}
+body .container #rangeHolder .col #head1 h2 {
+  display: inline;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body .container img {
+  position: fixed;
+  height: 100%;
+  margin: -5% auto;
+  /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  opacity: 0;
+  border-radius: 5%;
+}
+body .container #cardHolder1 .col {
+  margin: 0px;
+  padding: 2px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+body .container #cardHolder1 .col .card {
+  margin: 1%;
+  padding: 0px;
+  border-radius: 25%;
+  opacity: 0.9;
+}
+body .container #cardHolder1 .col .card .card-content {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 2px;
+  font-weight: bold;
+}
+body .container #cardHolder2 .col {
+  margin: 0px;
+  padding: 2px;
+}
+body .container #cardHolder2 .col .card {
+  margin: 1%;
+  padding: 0px;
+  border-radius: 25%;
+  opacity: 0.9;
+}
+
+.drippin {
+  animation: ease-in-out drippin 3s infinite;
+}
+
+@keyframes drippin {
+  0% {
+    opacity: 0;
+    text-shadow: 0px -5px 2px white;
+  }
+  20% {
+    text-shadow: 0px 0px 2px lightgreen;
+  }
+  35% {
+    text-shadow: 0px -3px 3px green;
+  }
+  60% {
+    opacity: 1;
+    text-shadow: 0px -4px 3px lightgreen;
+    color: lightgreen;
+  }
+  70% {
+    opacity: 0.8;
+    text-shadow: 0px -4px 3px white;
+  }
+  100% {
+    text-shadow: 0px -100px 10px #1d1a1a;
+    opacity: 0.1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
